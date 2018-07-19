@@ -52,6 +52,7 @@ Version: {__version__}
         return parser
 
     def scraper(self, start_page=None, end_page=None, records=[]):
+        print('Started... please wait.')
         r = requests.get(self.URL % start_page)
 
         soup = BeautifulSoup(r.text, 'lxml')  # html.parser is slower
@@ -129,9 +130,9 @@ Version: {__version__}
         else:
             self.export_to_json(filename=filename, records=records)
 
+        print('Finished!')
+
 
 if __name__ == '__main__':
     scraptimus = Scraptimus()
-    print('Started... please wait.')
     scraptimus.scrap()
-    print('Finished!')

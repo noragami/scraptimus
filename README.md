@@ -25,7 +25,7 @@ Please do not use any of the data retrieved from this software without the expli
 
 
 ## How do I use this?
-Clone the repository & run `python setup.py develop`. (Or [download](/archive/master.zip) it & run `python setup.py install`, which copies the code to your local Python packages folder)
+Clone the repository & run `python setup.py develop`. (Or [download](archive/master.zip) it & run `python setup.py install`, which copies the code to your local Python packages folder)
 
     usage: python -m scraptimus [-h] [-f FILENAME] [-j | -c] [-s STARTPAGE]
                                 [-e ENDPAGE]
